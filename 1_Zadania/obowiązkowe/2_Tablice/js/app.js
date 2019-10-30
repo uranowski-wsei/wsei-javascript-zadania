@@ -25,12 +25,15 @@ for(let count = 0; count < fruits.length; count++){
     console.log(fruits[count]);
 }
 //zadanie 3
-let array = ['apple', 'orange', 'banana'];
+let arr3 = ['apple', 'orange', 'banana'];
 function printTable(array){
     for (let i=0; i< array.length ; i++)
     console.log(array[i]);
 }
+printTable(arr3);
+    
 //zadanie 4
+let arr4 = [1,2,3,4,5,6,7];
 function multiply(array){
     var temp = 1;
     for(let i = 0; i<array.length; i++){
@@ -38,6 +41,9 @@ function multiply(array){
     }
     console.log(temp);
 }
+multiply(arr4);
+
+
 //zadanie 5
 function getEvenAvarage(array){
     let avg = 0;
@@ -46,12 +52,13 @@ function getEvenAvarage(array){
     array.forEach(
         (element) =>{
         if(element %2 == 0){
-            any += element;
+            avg += element;
             eventnumber ++;
         }
     }
     )
-    if (any == 0){
+    avg /= eventnumber;
+    if (avg == 0){
         console.log(null);
     }else{
         console.log(avg);
@@ -59,13 +66,14 @@ function getEvenAvarage(array){
 
 
 }
-
+getEvenAvarage([1,2,3,4,5,6,7]);
 //zadanie 6
-array = [145,11,3,64,4,6,10];
+arr6 = [145,11,3,64,4,6,10];
 function sortArray(array){
-    cons.t = array.sort((a,b)=>a-b);
-    cons(t);
+    let a = array.sort((a,b)=>a-b);
+    console.log(a);
 }
+sortArray(arr6);
 //zadanie 7
 function addArrays(arr1, arr2){
     var counter =  arr1.length>arr2.length? arr1.length:arr2.length;
@@ -76,7 +84,4 @@ function addArrays(arr1, arr2){
         result[i] = firstNum+secondNum;
     }
     return result;
-
-
-    
 }
