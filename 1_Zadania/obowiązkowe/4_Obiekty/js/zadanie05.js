@@ -31,3 +31,21 @@ var animals = [
     }
 
 ]
+
+for (var i=0; i<animals.length; i++) {
+    var animal = "";
+    var objectCheck = false;
+
+    for(var element in animals[i]) {
+        objectCheck = Array.isArray(animals[i][element]);
+        if(objectCheck === true) {
+            var subElements = animals[i][element];
+            for(var j=0; j<subElements.length; j++) {
+                for(var subEl in subElements[j])
+                    animal += subElements[j][subEl] + " ";
+            }
+        } else
+            animal += animals[i][element] + " ";
+    }
+    console.log(animal);
+}

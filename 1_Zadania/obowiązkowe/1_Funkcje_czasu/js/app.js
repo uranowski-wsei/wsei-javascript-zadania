@@ -1,3 +1,4 @@
+//Task 1
 function countHello(value) {
     var count = 0;
     var intervalId=setInterval(() => {
@@ -6,7 +7,7 @@ function countHello(value) {
     if (count === value){
         clearInterval(intervalId)
     }
-},500);
+    },500);
 }
 
 countHello(5);

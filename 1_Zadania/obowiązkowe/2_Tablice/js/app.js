@@ -1,4 +1,4 @@
-//zadanie 0
+//Task 0
 function distFromAvarage(numberArray){
     var avg = 0;
     numberArray.forEach(element => {
@@ -17,14 +17,14 @@ function distFromAvarage(numberArray){
 
 distFromAvarage([1,2,3,4,5,6,7])
 
-//zadanie 1
-let fruits = ['apple', 'orange', 'banana'];
+//Task 1
+var fruits = ['apple', 'orange', 'banana'];
 console.log(fruits[0]);
 console.log(fruits[fruits.length - 1]);
 for(let count = 0; count < fruits.length; count++){
     console.log(fruits[count]);
 }
-//zadanie 3
+//Task 3
 let arr3 = ['apple', 'orange', 'banana'];
 function printTable(array){
     for (let i=0; i< array.length ; i++)
@@ -32,7 +32,7 @@ function printTable(array){
 }
 printTable(arr3);
     
-//zadanie 4
+//Task 4
 let arr4 = [1,2,3,4,5,6,7];
 function multiply(array){
     var temp = 1;
@@ -44,18 +44,18 @@ function multiply(array){
 multiply(arr4);
 
 
-//zadanie 5
+//Task 5
 function getEvenAvarage(array){
     let avg = 0;
     let eventnumber = 0;
     
     array.forEach(
         (element) =>{
-        if(element %2 == 0){
-            avg += element;
-            eventnumber ++;
+            if(element %2 == 0){
+                avg += element;
+                eventnumber ++;
+            }
         }
-    }
     )
     avg /= eventnumber;
     if (avg == 0){
@@ -63,18 +63,17 @@ function getEvenAvarage(array){
     }else{
         console.log(avg);
     }
-
-
 }
 getEvenAvarage([1,2,3,4,5,6,7]);
-//zadanie 6
+
+//Task 6
 arr6 = [145,11,3,64,4,6,10];
 function sortArray(array){
     let a = array.sort((a,b)=>a-b);
     console.log(a);
 }
 sortArray(arr6);
-//zadanie 7
+//Task 7
 function addArrays(arr1, arr2){
     var counter =  arr1.length>arr2.length? arr1.length:arr2.length;
     var result = [];
