@@ -1,3 +1,13 @@
+Programowanie w JavaScript
+Repozytorium realizowane w ramach zaliczenia przedmiotu Programowanie w JavaScript
+
+Antoni Uranowski
+
+Nr. indeksu: 11859
+
+Nr grupy: lab7/2/WebN
+
+Wyższa Szkoła Ekonomii i Informatyki w Krakowie
 
 # Programowanie w JavaScript
 > Kilka ważnych informacji
