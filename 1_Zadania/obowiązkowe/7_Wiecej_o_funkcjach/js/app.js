@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//Definiujemy funkcje jeden
 function jeden() {
 
-    //Twoj komentarz ...
+    //Definiujemy zmienna1
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //Definiujemy funkcje dwa
     function dwa() {
 
-        //Twoj komentarz ...
+        //Zmienna jest widoczna, bo funkcja dwa jest wewnątrz funkcji jeden
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //Definiujemy zmienna2
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //Wywołujemy funkcje dwa
     dwa();
 
-    //Twoj komentarz ...
+    //Zmienna2 nie jest widoczna, ponieważ nie ma dostepu do zmiennych wewnątrz funkcji dwa
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//Wywołanie funkcji jeden
 jeden()

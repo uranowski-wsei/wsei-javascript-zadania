@@ -1,3 +1,4 @@
+//Task 0
 function Basket(){
     this.products = [];
     this.sum = 0;
